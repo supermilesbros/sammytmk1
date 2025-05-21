@@ -14,10 +14,4 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/main.css'
   ],
-  ui: {
-    colors: {
-      primary: 'blue',
-      neutral: 'zinc'
-    }
-  }
 })
