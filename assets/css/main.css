@@ -1,6 +1,19 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-:root {
-  --ui-primary: blue;
+@theme {
+  --ui-primary: var(--color-red-700);
+  --ui-secondary: var(--color-yellow-300);
+
+  --font-sans-serif: 'Helvetica Neue', sans-serif;
+
 }
+
+@layer base {
+  body {
+    @apply bg-slate-900;
+    font-family: var(--font-sans-serif);
+    color: var(--color-slate-100);
+  }
+}
+
