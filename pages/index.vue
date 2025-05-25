@@ -7,6 +7,7 @@
                 <h1 class="hero-title">Nightmare Theater</h1>
                 <p class="hero-subtitle">Watch anywhere. Cancel anytime.</p>
                 <UButton color="primary" size="xl">Get Started</UButton>
+                 <UButton>Button</UButton>
             </div>
         </div>
 
