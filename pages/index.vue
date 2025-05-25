@@ -4,7 +4,7 @@
         <div class="hero-full">
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1 class="hero-title">Unlimited movies, TV shows, and more</h1>
+                <h1 class="hero-title">Nightmare Theater</h1>
                 <p class="hero-subtitle">Watch anywhere. Cancel anytime.</p>
                 <UButton color="primary" size="xl">Get Started</UButton>
             </div>
