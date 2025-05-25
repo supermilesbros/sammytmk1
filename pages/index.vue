@@ -1,15 +1,9 @@
 <template>
-    <div>
+  <div>
+    <div class="relative z-10 px-4 md:px-12 lg:px-24">
+      <HomeHero class="hero-full" />
+    </div>
         <!-- Full Width Hero Banner with Image Background -->
-        <div class="hero-full">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1 class="hero-title">Nightmare Theater</h1>
-                <p class="hero-subtitle">Watch anywhere. Cancel anytime.</p>
-                <UButton color="primary" size="xl">Get Started</UButton>
-                 <UButton>Button</UButton>
-            </div>
-        </div>
 
         <UContainer>
             <!-- Rows of Movies -->
