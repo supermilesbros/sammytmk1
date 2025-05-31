@@ -1,35 +1,17 @@
 <template>
   <div>
-    <div class="relative z-10 px-4 md:px-12 lg:px-24">
+    <div class="relative z-10">
       <HomeHero class="hero-full" />
     </div>
         <!-- Full Width Hero Banner with Image Background -->
-
-        <UContainer>
-            <!-- Rows of Movies -->
-            <div v-for="(row, idx) in rows" :key="idx" class="movie-row">
-                <h2 class="row-title">{{ row.title }}</h2>
-                <div class="row-movies">
-                    <UCard v-for="movie in row.movies" :key="movie.id" class="movie-card">
-                        <img :src="movie.img" :alt="movie.title" class="movie-img" />
-                        <div class="movie-title">{{ movie.title }}</div>
-                    </UCard>
-                </div>
-            </div>
-        </UContainer>
     </div>
 </template>
 
 <script setup>
-const rows = [
-    {
-        title: 'Trending Now',
-        movies: [
-            { id: 1, title: 'Movie 1', img: 'https://picsum.photos/200/300?random=1' },
-            { id: 5, title: 'Movie 5', img: 'https://picsum.photos/200/300?random=5' },
-        ],
-    }
-]
+
+definePageMeta({
+    layout: 'welcome',
+})
 </script>
 
 <style scoped>
@@ -44,7 +26,6 @@ const rows = [
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
   border-radius: 0;
   overflow: hidden;
 }

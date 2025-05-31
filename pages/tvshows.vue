@@ -21,7 +21,7 @@
       <h2 class="row-title">{{ row.title }}</h2>
       <div class="row-shows">
         <UCard v-for="show in row.shows" :key="show.id" class="show-card">
-          <img :src="show.img" :alt="show.title" class="show-img" />
+          <img :src="show.img" :alt="show.title" class="show-img" >
           <div class="show-title">{{ show.title }}</div>
         </UCard>
       </div>

@@ -1,7 +1,7 @@
 <template>
   <header class="fixed top-0 left-0 w-full z-50  px-6 py-4 flex justify-between items-center">
     <NuxtLink to="/" class="flex items-center gap-2 text-2xl font-bold text-green-200">
-      <img src="/public/sammy-terry-raster-logo.png" alt="Sammy Terry Logo" class="h-20" />
+      <img src="/public/sammy-terry-raster-logo.png" alt="Sammy Terry Logo" class="h-20" >
     </NuxtLink>
     <nav class="hidden md:flex gap-6 text-xl text-yellow-300">
       <NuxtLink to="/movies" class="hover:text-red-500">Nightmare Theater</NuxtLink>

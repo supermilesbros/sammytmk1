@@ -1,6 +1,36 @@
-# Nuxt Minimal Starter
+# Sammy Terry Website and Streaming Service
+This is the official website and streaming service for Sammy Terry, a beloved horror host. The project is built using [Nuxt 3](https://nuxt.com) and provides a platform for fans to watch classic horror movies and shows.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Authors and Contributors
+Developer: [Jared Miles](https://github.com/supermilesbros)
+
+Project Manager: [Andrew Alam]
+
+
+## Features
+
+- Watch classic horror movies and shows
+- User-friendly interface
+- Responsive design
+- Easy navigation
+
+## Architecture Overview
+[ Nuxt Frontend (Vue 3 + Nuxt3 Tailwind + Nuxt UI) ]
+    |
+    |-> Auth requests (signup, login)
+    |-> Fetch content, user status, etc.
+    |-> Stripe Checkout
+    |
+[ Backend API (Node.js + Express/Fastify) ]
+    |
+    |-> Prisma ORM
+    |-> Stripe SDK
+    |-> JWT or Firebase Token Verification
+    |-> S3 Signed URL Generation
+    |
+[ PostgreSQL (User data, subscriptions, videos) ]
+[ Stripe (Billing & Subscriptions) ]
+[ AWS S3 (Video Files, Thumbnails) ]
 
 ## Setup
 
@@ -71,5 +101,3 @@ yarn preview
 # bun
 bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

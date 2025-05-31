@@ -11,7 +11,7 @@
     </div>
     <div v-else class="list-row">
       <UCard v-for="item in myList" :key="item.id" class="list-card">
-        <img :src="item.img" :alt="item.title" class="list-img" />
+        <img :src="item.img" :alt="item.title" class="list-img" >
         <div class="list-title">{{ item.title }}</div>
       </UCard>
     </div>
