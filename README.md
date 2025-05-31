@@ -15,22 +15,21 @@ Project Manager: [Andrew Alam]
 - Easy navigation
 
 ## Architecture Overview
-[ Nuxt Frontend (Vue 3 + Nuxt3 Tailwind + Nuxt UI) ]
-    |
-    |-> Auth requests (signup, login)
-    |-> Fetch content, user status, etc.
-    |-> Stripe Checkout
-    |
-[ Backend API (Node.js + Express/Fastify) ]
-    |
-    |-> Prisma ORM
-    |-> Stripe SDK
-    |-> JWT or Firebase Token Verification
-    |-> S3 Signed URL Generation
-    |
-[ PostgreSQL (User data, subscriptions, videos) ]
-[ Stripe (Billing & Subscriptions) ]
-[ AWS S3 (Video Files, Thumbnails) ]
+Nuxt Frontend (Vue 3 + Nuxt3 Tailwind + Nuxt UI) 
+    Auth requests (signup, login)
+    Fetch content, user status, etc.
+    Stripe Checkout
+    Backend API (Node.js + Express/Fastify) 
+    Prisma ORM
+    Stripe SDK
+    JWT or Firebase Token Verification
+    S3 Signed URL Generation
+    PostgreSQL Database
+
+## Tech Stack
+PostgreSQL (User data, subscriptions, videos) 
+Stripe (Billing & Subscriptions)
+AWS S3 (Video Files, Thumbnails)
 
 ## Setup
 
