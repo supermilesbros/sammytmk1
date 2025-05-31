@@ -11,7 +11,7 @@
       <h2 class="row-title">{{ row.title }}</h2>
       <div class="row-movies">
         <UCard v-for="movie in row.movies" :key="movie.id" class="movie-card">
-          <img :src="movie.img" :alt="movie.title" class="movie-img" />
+          <img :src="movie.img" :alt="movie.title" class="movie-img" >
           <div class="movie-title">{{ movie.title }}</div>
         </UCard>
       </div>

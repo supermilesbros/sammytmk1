@@ -9,6 +9,10 @@
 </template>
 
 <script setup>
+
+definePageMeta({
+  layout: 'welcome'
+});
 // No script logic needed for now
 </script>
 
