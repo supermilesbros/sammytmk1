@@ -1,48 +1,68 @@
+<script setup>
+const rows = [
+  {
+    title: "Now Playing",
+    movies: [
+      { id: 1, title: "Movie A", img: "https://picsum.photos/200/300?random=21" },
+      { id: 2, title: "Movie B", img: "https://picsum.photos/200/300?random=22" },
+      { id: 3, title: "Movie C", img: "https://picsum.photos/200/300?random=23" },
+      { id: 4, title: "Movie D", img: "https://picsum.photos/200/300?random=24" },
+      { id: 5, title: "Movie E", img: "https://picsum.photos/200/300?random=25" },
+    ],
+  },
+  {
+    title: "Top Rated",
+    movies: [
+      { id: 6, title: "Movie F", img: "https://picsum.photos/200/300?random=26" },
+      { id: 7, title: "Movie G", img: "https://picsum.photos/200/300?random=27" },
+      { id: 8, title: "Movie H", img: "https://picsum.photos/200/300?random=28" },
+      { id: 9, title: "Movie I", img: "https://picsum.photos/200/300?random=29" },
+      { id: 10, title: "Movie J", img: "https://picsum.photos/200/300?random=30" },
+    ],
+  },
+];
+</script>
+
 <template>
   <UContainer>
     <!-- Hero Banner -->
     <div class="hero">
-      <h1 class="hero-title">Popular Movies</h1>
-      <p class="hero-subtitle">Blockbusters, classics, and more.</p>
+      <h1 class="hero-title">
+        Popular Movies
+      </h1>
+      <p class="hero-subtitle">
+        Blockbusters, classics, and more.
+      </p>
     </div>
 
     <!-- Rows of Movies -->
-    <div v-for="(row, idx) in rows" :key="idx" class="movie-row">
-      <h2 class="row-title">{{ row.title }}</h2>
+    <div
+      v-for="(row, idx) in rows"
+      :key="idx"
+      class="movie-row"
+    >
+      <h2 class="row-title">
+        {{ row.title }}
+      </h2>
       <div class="row-movies">
-        <UCard v-for="movie in row.movies" :key="movie.id" class="movie-card">
-          <img :src="movie.img" :alt="movie.title" class="movie-img" >
-          <div class="movie-title">{{ movie.title }}</div>
+        <UCard
+          v-for="movie in row.movies"
+          :key="movie.id"
+          class="movie-card"
+        >
+          <img
+            :src="movie.img"
+            :alt="movie.title"
+            class="movie-img"
+          >
+          <div class="movie-title">
+            {{ movie.title }}
+          </div>
         </UCard>
       </div>
     </div>
   </UContainer>
 </template>
-
-<script setup>
-const rows = [
-  {
-    title: 'Now Playing',
-    movies: [
-      { id: 1, title: 'Movie A', img: 'https://picsum.photos/200/300?random=21' },
-      { id: 2, title: 'Movie B', img: 'https://picsum.photos/200/300?random=22' },
-      { id: 3, title: 'Movie C', img: 'https://picsum.photos/200/300?random=23' },
-      { id: 4, title: 'Movie D', img: 'https://picsum.photos/200/300?random=24' },
-      { id: 5, title: 'Movie E', img: 'https://picsum.photos/200/300?random=25' },
-    ],
-  },
-  {
-    title: 'Top Rated',
-    movies: [
-      { id: 6, title: 'Movie F', img: 'https://picsum.photos/200/300?random=26' },
-      { id: 7, title: 'Movie G', img: 'https://picsum.photos/200/300?random=27' },
-      { id: 8, title: 'Movie H', img: 'https://picsum.photos/200/300?random=28' },
-      { id: 9, title: 'Movie I', img: 'https://picsum.photos/200/300?random=29' },
-      { id: 10, title: 'Movie J', img: 'https://picsum.photos/200/300?random=30' },
-    ],
-  },
-]
-</script>
 
 <style scoped>
 .hero {
