@@ -1,28 +1,27 @@
+<script setup>
+definePageMeta({
+  layout: "welcome",
+});
+</script>
+
 <template>
   <div>
     <div class="relative z-10">
       <HomeHero class="hero-full" />
     </div>
-        <!-- Full Width Hero Banner with Image Background -->
-    </div>
+    <!-- Full Width Hero Banner with Image Background -->
+  </div>
 </template>
 
-<script setup>
-
-definePageMeta({
-    layout: 'welcome',
-})
-</script>
-
 <style scoped>
-
 .hero-full {
   position: relative;
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
   min-height: 420px;
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center center/cover no-repeat;
+  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80")
+    center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

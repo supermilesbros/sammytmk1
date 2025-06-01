@@ -1,26 +1,42 @@
+<script setup>
+const myList = [];
+</script>
+
 <template>
   <UContainer>
     <div class="hero">
-      <h1 class="hero-title">My List</h1>
-      <p class="hero-subtitle">Your saved movies and TV shows will appear here.</p>
+      <h1 class="hero-title">
+        My List
+      </h1>
+      <p class="hero-subtitle">
+        Your saved movies and TV shows will appear here.
+      </p>
     </div>
 
     <div v-if="myList.length === 0" class="empty-list">
       <UIcon name="i-heroicons-bookmark" class="w-16 h-16 text-gray-500 mx-auto mb-4" />
-      <p class="text-gray-400 text-center">You haven't added anything to your list yet.</p>
+      <p class="text-gray-400 text-center">
+        You haven't added anything to your list yet.
+      </p>
     </div>
     <div v-else class="list-row">
-      <UCard v-for="item in myList" :key="item.id" class="list-card">
-        <img :src="item.img" :alt="item.title" class="list-img" >
-        <div class="list-title">{{ item.title }}</div>
+      <UCard
+        v-for="item in myList"
+        :key="item.id"
+        class="list-card"
+      >
+        <img
+          :src="item.img"
+          :alt="item.title"
+          class="list-img"
+        >
+        <div class="list-title">
+          {{ item.title }}
+        </div>
       </UCard>
     </div>
   </UContainer>
 </template>
-
-<script setup>
-const myList = []
-</script>
 
 <style scoped>
 .hero {
